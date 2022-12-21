@@ -1,4 +1,9 @@
-# Resolving MCLP Using Walking Graph Network and Genetic Algorithm - Proposal of Elder Facilities in Gwanak
+
+![Title](https://capsule-render.vercel.app/api?type=transparent&fontColor=000000&text=Solving%20MCLP%20Using%20Graph%20Network%20and%20Genetic%20Algorithm%20&height=150&fontSize=30&desc=Proposal%20of%20the%20Location%20of%20New%20Elder%20Facilities%20in%20Gwanak&descAlignY=76&descAlign=50)  
+---
+<p>
+<font size= "20">Resolving MCLP Using Walking Graph Network and Genetic Algorithm for the Proposal of Elder Facilities in Gwanak</font>
+</p>
 
 The final submission for **2022-F CEE Urban Design Final Project**
 
@@ -10,7 +15,7 @@ While Gwanak-gu has the fifth-highest percentage of elderly residents living alo
 
 This project used the data from [map.seoul.go.kr](map.seoul.go.kr)
 
-<img src=images/data.jpeg width="750" height="450" />
+<img src=images/data.jpeg width="640" height="360" />
 
 - Distribution of Elder Populations
 - Facility Supply Map
@@ -21,24 +26,27 @@ This project used the data from [map.seoul.go.kr](map.seoul.go.kr)
 
 This project used QGIS to obtain coordinates from the tif images and combined them together
 
-<img src=./images/graph_embedding.jpeg width="750" height="450" />
+<img src=./images/graph_embedding.jpeg width="640" height="360" />
 
-<img src=./images/qgis.jpeg width="750" height="450" />
+<img src=./images/qgis.jpeg width="640" height="360" />
 
 
 ## Formula
 
 Suggested Formula is below.
 
+<p align="center">
+  <img src=./images/formula.jpeg width="480" height="300" />
+</p>
+
 The objective function had to be created since there was no appropriate reference for the objective function that was to be used with the genetic algorithm. With a graph network, this formula was suitable as an objective function since it could perform complicated computations of the 4390X4390-sized matrix, result in quantitative values, and reflect the characteristics of the adjacent matrix. S is the importance score, L is the NX1 matrix of the location candidate obtained from the genetic algorithm's process, and D is the physical distance that cannot be represented on the node. These scores for each node are weighted to obtain the score of the location selection itself. One scalar-type score is produced on the graph by a matrix product.
 
-<img src=./images/formula.jpeg width="750" height="450" />
 
 ## Result
 
 The result is below.
 
-<img src=./images/result.jpg width="750" height="350" />
+<img src=./images/result.jpeg width="640" height="360" />
 
 
 
